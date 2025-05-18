@@ -1,0 +1,250 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #34495e;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+p {
+    line-height: 1.5;
+    margin: 10px 0 15px 0;
+}
+
+hr {
+    margin: 30px 0;
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 25px;
+}
+
+.container:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.container img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex: 0 0 300px;
+}
+
+.info {
+    flex: 1;
+}
+
+.info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    color: #34495e;
+}
+
+.info p {
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
+
+
+
+
+  /* Tabla de preferencias */
+  /* Estilos SOLO para la tabla de preferencias */
+table.preferencias {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  
+  table.preferencias th,
+  table.preferencias td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  table.preferencias thead {
+    background-color: #f2f2f2;
+  }
+  
+  table.preferencias tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #eee;
+    margin-top: 40px;
+  }
+  
+
+  .centrado {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap; /* para que se adapten en pantallas pequeñas */
+    gap: 20px;
+  }
+  
+  .centrado video,
+  .centrado audio {
+    max-width: 100%;
+    width: 500px; /* tamaño máximo para video/audio */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  section.centrado {
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .gallery {
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  .gallery div[desc] {
+    margin-top: 8px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .contenedor-formulario {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.contenedor-formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-formulario label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contenedor-formulario input[type="text"],
+.contenedor-formulario input[type="email"],
+.contenedor-formulario select,
+.contenedor-formulario textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+.contenedor-formulario input:focus,
+.contenedor-formulario textarea:focus,
+.contenedor-formulario select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contenedor-formulario textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.radio-group {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.radio-group label {
+    font-weight: normal;
+}
+
+.contenedor-formulario input[type="submit"] {
+    margin-top: 25px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contenedor-formulario input[type="submit"]:hover {
+    background-color: #0056b3;
+}
